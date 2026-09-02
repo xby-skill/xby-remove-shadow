@@ -1,0 +1,34 @@
+{
+  "name" : "xby-remove-shadow",
+  "version" : "1.0.0",
+  "description" : "检测并去除文档或照片中因拍摄角度、光线不均产生的阴影、投影与亮度渐变，输出清晰、干净、亮度均匀的高清效果，便于阅读、OCR识别、存档或后续处理，适用于翻拍文档、证件照与扫描件净化等场景。返回JSON格式数据，包含结果图片下载链接。",
+  "keywords" : [ "xby-remove-shadow", "xby", "remove", "shadow", "图像", "去", "阴影" ],
+  "license" : "MIT",
+  "type" : "module",
+  "main" : "./dist/index.js",
+  "files" : [ "dist", "cordis.patch.yml" ],
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/xby_skill/xby-remove-shadow.git"
+  },
+  "homepage" : "",
+  "bugs" : {
+    "url" : "https://github.com/xby_skill/xby-remove-shadow/issues"
+  },
+  "author" : "",
+  "scripts" : {
+    "build" : "tsc",
+    "watch" : "tsc --watch"
+  },
+  "dependencies" : { },
+  "peerDependencies" : { },
+  "dsh" : {
+    "bundle" : {
+      "patch" : "./cordis.patch.yml"
+    }
+  },
+  "devDependencies" : {
+    "@types/node" : "^26.3.0",
+    "typescript" : "^7.0.2"
+  }
+}

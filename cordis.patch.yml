@@ -1,0 +1,14 @@
+# 当插件作为 npm/github 包安装时，此文件由 package.json 中 dsh.bundle.patch 引用
+# patch 将插件注册到 profile 的 loader entries
+
+- insert:
+    - id: xby-remove-shadow
+      # 通过 npm 包名（即 package.json 的 name）解析入口
+      name: 'xby-remove-shadow'
+      config:
+        # 可选：在 profile 级别预先填入 API 密钥
+        # apiKey: your_api_key_here
+        # 可选：自定义 API 地址
+        # baseUrl: https://mcp.xiaobenyang.com
+        # 可选：请求超时时间（毫秒）
+        # timeoutMs: 30000
